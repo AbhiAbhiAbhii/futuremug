@@ -25,7 +25,7 @@ export default function Hero({mobileCheck}) {
                     <div className='heroContentA' style={{width: mobileCheck?'100%':'55%',display: mobileCheck?'flex':'',alignItems:mobileCheck?'center':'',flexDirection:mobileCheck?'column':''}}>
                     <div className='heroLogo' style={{width:mobileCheck?'fit-content':'fit-content',padding: mobileCheck?'1.6rem 0':'2.6rem 0'}}>
                         <div className='heroImageLogo' style={{width:mobileCheck?'60rem':'16rem',height: mobileCheck?'8rem':'3.5rem'}}>
-                            <img src={'/heroFutureMugLogo.png'} alt='futuremug' />
+                            <img src={'/heroFutureMugLogo.png'} alt="" />
                         </div>
                     </div>
                     <div className='heroContentTitle text-XXL' style={{width:'fit-content',fontSize: mobileCheck? '8.8rem':'',textAlign:mobileCheck?'center':'',padding:mobileCheck ? '2rem 0':''}}><p>We help hiring teams <br/>recruit seamlessly.</p></div>
@@ -38,7 +38,7 @@ export default function Hero({mobileCheck}) {
 
                     <div className='heroContentB' style={{width:mobileCheck? '100%':'45%',display:'flex',justifyContent:mobileCheck ? 'center':'flex-end'}}>
                     <div className='heroImage' style={{height:mobileCheck? '100%':'32rem',width:mobileCheck? '90%':'40rem'}}>
-                        <img src='/heroImage.png' style={{height:'100%',width:'100%'}} alt='HeroImage' />
+                        <img src='/heroImage.png' style={{height:'100%',width:'100%'}} alt="" />
                     </div>
                     </div>
                 </div>

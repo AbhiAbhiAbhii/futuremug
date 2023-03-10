@@ -27,7 +27,7 @@ export default function SectionFour({mobileCheck}) {
                                     <p>“We will focus on adding value to our users by focussing on maximising lifestyle experiences and offering customer-focussed services both that connect our customers to the virtual and real world”</p>
                                 </div>
                                 <div style={{display:'flex',alignItems:'center'}}>
-                                    <div style={{height:mobileCheck ? '10rem':'5.3rem',width:mobileCheck ? '10rem':'5.3rem',marginRight:'1rem'}}><img style={{height:'100%', width:'100%'}} src='/sliderPercentage.svg' alt='62%' /></div>
+                                    <div style={{height:mobileCheck ? '10rem':'5.3rem',width:mobileCheck ? '10rem':'5.3rem',marginRight:'1rem'}}><img style={{height:'100%', width:'100%'}} src='/sliderPercentage.svg' alt="" /></div>
                                     <div style={{fontFamily:'var(--Inter-font)',fontSize:mobileCheck ? '2rem':''}}><p>INCREASE IN INTERVIEW <br/> TO SELECTION RATIO</p></div>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@ export default function SectionFour({mobileCheck}) {
                                     <p>“We will focus on adding value to our users by focussing on maximising lifestyle experiences and offering customer-focussed services both that connect our customers to the virtual and real world”</p>
                                 </div>
                                 <div style={{display:'flex',alignItems:'center'}}>
-                                    <div style={{height:mobileCheck ? '8rem':'4rem',width:mobileCheck ? '8rem':'4rem',marginRight:'1rem'}}><img style={{height:'100%', width:'100%'}} src='/sliderPercentage2.svg' alt='62%' /></div>
+                                    <div style={{height:mobileCheck ? '8rem':'4rem',width:mobileCheck ? '8rem':'4rem',marginRight:'1rem'}}><img style={{height:'100%', width:'100%'}} src='/sliderPercentage2.svg' alt="" /></div>
                                     <div style={{fontFamily:'var(--Inter-font)',fontSize:mobileCheck ? '1.6rem':''}}><p>INCREASE IN INTERVIEW <br/> TO SELECTION RATIO</p></div>
                                 </div>
                             </div>

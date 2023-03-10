@@ -10,22 +10,22 @@ export default function SectionTwo({mobileCheck}) {
                 <div className='sectionTwoEyeBrow text-body-l' style={{padding:mobileCheck ? '2rem 0':'2rem 0'}}><p style={{textTransform:'uppercase', color:'#031C1E',fontSize:mobileCheck ? '2rem':'1rem',textAlign:mobileCheck ? 'center':'',lineHeight:mobileCheck? '130%':''}}>Efficient hiring teams at the top companies rely on futuremug</p></div>
                 <div className='sectionTwoLogos' style={{display:'flex',flexWrap:'wrap',overflow:'hidden',width:'100%'}}>
                     <div className='logoContainer' style={{width:mobileCheck ? '14%':'',margin:mobileCheck ? '4rem 2rem':''}}>
-                        <img src='/ALogo.svg' alt='A'/>
+                        <img src='/ALogo.svg' alt=""/>
                     </div>
                     <div className='logoContainer' style={{width:mobileCheck ? '14%':''}}>
-                        <img src='/Samsung.svg' alt='A'/>
+                        <img src='/Samsung.svg' alt=""/>
                     </div>
                     <div className='logoContainer' style={{width:mobileCheck ? '14%':''}}>
-                        <img src='/HP.svg' alt='A'/>
+                        <img src='/HP.svg' alt=""/>
                     </div>
                     <div className='logoContainer' style={{width:mobileCheck ? '14%':''}}>
-                        <img src='/Continental.svg' alt='A'/>
+                        <img src='/Continental.svg' alt=""/>
                     </div>
                     <div className='logoContainer' style={{width:mobileCheck ? '14%':''}}>
-                        <img src='/Toyota.svg' alt='A'/>
+                        <img src='/Toyota.svg' alt=""/>
                     </div>
                     <div className='logoContainer' style={{width:mobileCheck ? '14%':''}}>
-                        <img src='/SAP.png' alt='A'/>
+                        <img src='/SAP.png' alt=""/>
                     </div>
                 </div>
             </div>

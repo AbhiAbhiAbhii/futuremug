@@ -29,7 +29,7 @@ export default function Form({mobileCheck}) {
                             <label style={{padding:'.6em 0'}}>Mobile Number</label>
                             <div style={{position:'relative'}}>
                                 <input style={{width:'100%',height:'2.8em',padding:'0 5em',background:'#FBFBFB',fontSize:'1.1em',fontFamily:'var(--Inter-font)',color:'#BFBFBF',border:'1px #DADADA solid',borderRadius:'.4em',outline:'none'}} type='alphanumeric' placeholder='9996540223'/>
-                                <div style={{position:'absolute',height:'2.8em',background:"#EBEBEB",display:'flex',alignItems:'center',top:'50%',left:'0%',transform:'translate(0%,-50%)',padding:'0 .6em',borderTopLeftRadius:'.4em',borderBottomLeftRadius:'.4em'}}><img src='/numberForm.png' /></div>
+                                <div style={{position:'absolute',height:'2.8em',background:"#EBEBEB",display:'flex',alignItems:'center',top:'50%',left:'0%',transform:'translate(0%,-50%)',padding:'0 .6em',borderTopLeftRadius:'.4em',borderBottomLeftRadius:'.4em'}}><img src='/numberForm.png' alt="" /></div>
                             </div>
                         </div>
                         <div style={{padding:'2em 0 1em 0'}}>

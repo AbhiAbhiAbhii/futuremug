@@ -63,7 +63,7 @@ export default function SectionThree({mobileCheck}) {
                                                             <p>{accord.question}</p>
                                                         </div>
                                                         <div className={ accordion == i ? 'activeArrow' : 'inactiveArrow'}>
-                                                            <img src='/accordionArrow.svg' alt='arrow' />
+                                                            <img src='/accordionArrow.svg' alt="" />
                                                         </div>
                                                     </div>
                                                     <div className={ accordion == i ? `${activeClass}` : 'inactive'} style={{width:mobileCheck? '':'31rem',overflow:'hidden'}}>
@@ -74,7 +74,7 @@ export default function SectionThree({mobileCheck}) {
                                                             <button className='text-body-l' style={{display:'block',width:'100%',height:mobileCheck? '10rem':'3.4rem',background:'#031D1E',border:'1px #5555 solid',borderRadius:'.3rem',color:'#60D185',fontSize:mobileCheck ? '3.4rem':''}}>{accord.CTA}</button>
                                                         </div>
                                                         <div style={{display:'flex',alignItems:'center',justifyContent:'center',padding:mobileCheck ? '4rem 0':'.8rem 0'}}>
-                                                            <div style={{marginRight:mobileCheck? '2rem':'.2rem',height:mobileCheck? '4rem':'1.8rem',width:mobileCheck ? '4rem':'1.8rem',borderRadius:'50%',background:'#031D1E',display:'flex',alignItems:'center',justifyContent:'center'}}><img style={{height:mobileCheck? '60%':'60%',width:mobileCheck? '60%':'60%',objectFit:'contain'}} src='/accordionTick.svg' alt='TICK' /></div>
+                                                            <div style={{marginRight:mobileCheck? '2rem':'.2rem',height:mobileCheck? '4rem':'1.8rem',width:mobileCheck ? '4rem':'1.8rem',borderRadius:'50%',background:'#031D1E',display:'flex',alignItems:'center',justifyContent:'center'}}><img style={{height:mobileCheck? '60%':'60%',width:mobileCheck? '60%':'60%',objectFit:'contain'}} src='/accordionTick.svg' alt="" /></div>
                                                             <div className='text-body-l'><p style={{fontSize:mobileCheck ? '2rem':'.9rem',fontWeight:'400'}}>{accord.smalldescription}</p></div>
                                                         </div>
                                                     </div>
@@ -87,7 +87,7 @@ export default function SectionThree({mobileCheck}) {
                     </div>
                     <div className='secThreeContentB' style={{width:mobileCheck ? '100%':'50%',display:mobileCheck ? 'flex':'',justifyContent:mobileCheck ? 'center':'',padding:mobileCheck ? '0 0 8rem 0':''}}>
                         <div className='secThreeImgContainer' style={{width:mobileCheck? '90%':'39rem',height:mobileCheck ? '90%':'35rem'}}>
-                            <img src='/sectionThreeImage.png' alt='image' style={{height:'100%',width:'100%'}} />
+                            <img src='/sectionThreeImage.png' alt="" style={{height:'100%',width:'100%'}} />
                         </div>
                     </div>
                 </div>
