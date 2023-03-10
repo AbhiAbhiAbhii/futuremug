@@ -41,7 +41,7 @@ export default function SectionFive({mobileCheck}) {
                         </div>
 
                         <div style={{padding:mobileCheck ? '6rem 0':'',display:mobileCheck ? 'flex':'',flexDirection:mobileCheck ? 'column':'',alignItems:mobileCheck ? 'center':'',fontSize:mobileCheck ? '3rem':'1rem'}}>
-                            <div style={{fontFamily:'var(--Inter-font)',fontSize:'.88em',fontWeight:'600',padding:'2em 0',textAlign:mobileCheck ? 'left':'',width:mobileCheck ?'84%':''}}><p>Here's what we'll discuss:</p></div>
+                            <div style={{fontFamily:'var(--Inter-font)',fontSize:'.88em',fontWeight:'600',padding:'2em 0',textAlign:mobileCheck ? 'left':'',width:mobileCheck ?'84%':''}}><p>Here&apos;s what we&apos;ll discuss:</p></div>
                             <div style={{display:mobileCheck ? 'flex':'',flexDirection:mobileCheck ? 'column':''}}>
                                 {
                                     discussContent.map((data,i) => {
