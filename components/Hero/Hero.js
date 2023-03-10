@@ -30,7 +30,7 @@ export default function Hero({mobileCheck}) {
                         </div>
                     </div>
                     <div className='heroContentTitle text-XXL' style={{width:'fit-content',fontSize: mobileCheck? '8.8rem':'',textAlign:mobileCheck?'center':'',padding:mobileCheck ? '2rem 0':''}}><p>We help hiring teams <br/>recruit seamlessly.</p></div>
-                    <div className='heroContentDescription text-body-l' style={{padding:'2.75rem 0',fontSize:mobileCheck ? '2.6rem':'',textAlign:mobileCheck ? 'center':'',padding:mobileCheck ? '1rem 0':''}}><p>futuremug&apos;s platform lets you spend less time on hiring <br/>and assessing candidates, and more time growing your<br/> business</p></div>
+                    <div className='heroContentDescription text-body-l' style={{fontSize:mobileCheck ? '2.6rem':'',textAlign:mobileCheck ? 'center':'',padding:mobileCheck ? '1rem 0':'2.75rem 0'}}><p>futuremug&apos;s platform lets you spend less time on hiring <br/>and assessing candidates, and more time growing your<br/> business</p></div>
                     <div className='ctaContainer' style={{display:'flex',padding: mobileCheck? '6rem 0':''}}>
                         <div className='CTA talk text-body-l' style={{cursor:'pointer',width:mobileCheck? '30rem':'',height: mobileCheck? '10rem':'',fontSize:mobileCheck ? '4rem':''}}> <p>Talk to us</p></div>
                         <div className='CTA schedule text-body-l' style={{cursor:'pointer',width:mobileCheck? '42rem':'',height: mobileCheck? '10rem':'',fontSize:mobileCheck ? '4rem':''}}><p>Schedule a Demo</p></div>
