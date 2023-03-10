@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Prompt:wght@300&display=swap');
+
 :root {
+
+  --Inter-font:  'Inter', sans-serif;
+  --Archivo-font: 'Archivo', sans-serif;
+  --text-XXL: 4.25rem;
+  --text-body-l: 1.25rem;
+
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -79,26 +88,94 @@
   margin: 0;
 }
 
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-size: 1vw;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #F1FAFF;
+  color: #242424;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
+.text-XXL{
+  font-family: var(--Inter-font);
+  font-size: var(--text-XXL);
+  line-height: 114%;
+  letter-spacing: -.02em;
+}
+.text-body-l {
+  font-family: var(--Inter-font);
+  font-size: var(--text-body-l);
+  line-height: 148%;
+  letter-spacing: -.02em;
+}
+.alert {
+  background: #F5F3F3;
+  border-bottom: 1px solid #DCDCDC;
+}
+.heroImageLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.CTA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 10.8rem;
+  background: #031D1E;
+  color: #FFF;
+  border-radius: .2rem;
+  margin-right: 2rem;
+}
+.CTA.schedule{
+  background: #FFF;
+  color: #000;
+  width: 17rem;
+}
+.logoContainer {
+  padding-inline: .6rem;
+  margin-inline: 1rem;
+}
+.active {
+  height: 100%;
+}
+.inactive {
+  height: 0;
+}
+.inactiveArrow {
+  transform: rotate(270deg);
+}
+.form input {
+  background: none;
+}
+.form label {
+  display: block;
+}
+
+
+
+
+
 
 @media (prefers-color-scheme: dark) {
   html {
