@@ -3,46 +3,13 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import { useRef, useState } from 'react'
+import Hero from '../components/Hero/Hero'
+import SectionTwo from '../components/SectionTwo/SectionTwo'
+import SectionThree from '../components/SectionThree/SectionThree'
 
 
 export default function Home() {
 
-    const [accordion, setAccordion] = useState(false);
-
-    let activeClass = accordion ? 'active':''
-
-    const alertRef = useRef();
-    const alertHandle = () => {
-        alertRef.current.style.display = 'none'
-    }
-
-    const accordionContent = [
-        {
-            question: 'Item point 1',
-            description: 'Timperdiet gravida scelerisque odio nunc. Eget felis, odio bibendum quis eget sit lorem donec diam. Volutpat sed orci turpis sit dolor est a pretium eget. Vitae turpis orci vel tellus cursus lorem vestibulum quis eu. Ut commodo, eget lorem venenatis urna.',
-            CTA: 'Book a Demo',
-            smalldescription: 'Our TAT Score is 231% lower than the rest',
-        },
-        {
-            question: 'Item point 2',
-            description: 'Timperdiet gravida scelerisque odio nunc. Eget felis, odio bibendum quis eget sit lorem donec diam. Volutpat sed orci turpis sit dolor est a pretium eget. Vitae turpis orci vel tellus cursus lorem vestibulum quis eu. Ut commodo, eget lorem venenatis urna.',
-            CTA: 'Book a Demo',
-            smalldescription: 'Our TAT Score is 231% lower than the rest'
-        },
-        {
-            question: 'Item point 3',
-            description: 'Timperdiet gravida scelerisque odio nunc. Eget felis, odio bibendum quis eget sit lorem donec diam. Volutpat sed orci turpis sit dolor est a pretium eget. Vitae turpis orci vel tellus cursus lorem vestibulum quis eu. Ut commodo, eget lorem venenatis urna.',
-            CTA: 'Book a Demo',
-            smalldescription: 'Our TAT Score is 231% lower than the rest'
-        },
-         {
-            question: 'Item point 3',
-            description: 'Timperdiet gravida scelerisque odio nunc. Eget felis, odio bibendum quis eget sit lorem donec diam. Volutpat sed orci turpis sit dolor est a pretium eget. Vitae turpis orci vel tellus cursus lorem vestibulum quis eu. Ut commodo, eget lorem venenatis urna.',
-            CTA: 'Book a Demo',
-            smalldescription: 'Our TAT Score is 231% lower than the rest'
-        },
-        
-    ]
 
     const discussContent = [
         {
@@ -65,155 +32,13 @@ export default function Home() {
 
   return (
     <>
-      <main className='hero' style={{overflowY:'hidden'}}>
-      <div ref={alertRef} className='alert' style={{padding:'.8rem 0rem',overflow:'hidden'}}>
-          <div className='alertContainer' style={{fontFamily:'var(--Inter-font)',display:'flex',width:'40%',alignItems:'center',justifyContent:'space-between',marginInline:'auto'}}>
-            <div className='alertTitle'><p style={{fontSize:'1rem'}}>Schedule a demo with us for your custom requirment.</p></div>
-            <div className='alertCTA'><button style={{cursor:'pointer',fontSize:'.8rem',border:'none',color:'#242424',height:'2.4rem',width:'8.6rem',fontWeight:'600',background: '#F0D487',borderRadius:'20rem',outline:'none',display:'flex',alignItems:'center',justifyContent:'center'}}><div style={{borderBottom:'1.4px #161616 solid'}}><p style={{fontWeight:'600'}}>Schedule a call</p></div></button></div>
-            <div className='close' onClick={alertHandle} style={{cursor:'pointer'}}><p style={{fontFamily:'var(--Inter-font)'}}>X</p></div>
-          </div>
-        </div>
-      <section className='heroWrapper' style={{padding:'0 4rem'}}>
+      <Hero />
+      <SectionTwo />
+      <SectionThree />
 
-        <div style={{padding:'6rem 0',display:'flex'}}>
-            <div className='heroContentA' style={{width:'55%'}}>
-            <div className='heroLogo' style={{width:'fit-content',padding:'2.6rem 0'}}>
-                <div className='heroImageLogo' style={{width:'16rem',height:'3.5rem'}}>
-                    <img src={'/heroFutureMugLogo.png'} alt='futuremug' />
-                </div>
-            </div>
-            <div className='heroContentTitle text-XXL' style={{width:'fit-content'}}><p>We help hiring teams <br/>recruit seamlessly.</p></div>
-            <div className='heroContentDescription text-body-l' style={{padding:'2.75rem 0'}}>futuremug's platform lets you spend less time on hiring <br/>and assessing candidates, and more time growing your<br/> business</div>
-            <div className='ctaContainer' style={{display:'flex'}}>
-                <div className='CTA talk text-body-l' style={{cursor:'pointer'}}> Talk to us</div>
-                <div className='CTA schedule text-body-l' style={{cursor:'pointer'}}> Schedule a Demo</div>
-            </div>
-            </div>
+     
 
-            <div className='heroContentB' style={{width:'45%',display:'flex',justifyContent:'flex-end'}}>
-            <div className='heroImage' style={{height:'32rem',width:'40rem'}}>
-                <img src='/heroImage.png' style={{height:'100%',width:'100%'}} alt='HeroImage' />
-            </div>
-            </div>
-        </div>
-      </section>
-     </main>
-
-     <section className='sectionTwo' style={{padding:'1rem 4rem 5rem 4rem',display:'flex',alignItems:'center',justifyContent:'center'}}>
-        <div style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
-            <div className='sectionTwoEyeBrow text-body-l' style={{padding:'2rem 0'}}><p style={{textTransform:'uppercase', color:'#031C1E',fontSize:'1rem'}}>efficient hiring teams at the top companies rely on futuremug</p></div>
-            <div className='sectionTwoLogos' style={{display:'flex'}}>
-                <div className='logoContainer'>
-                    <img src='/ALogo.svg' alt='A'/>
-                </div>
-                <div className='logoContainer'>
-                    <img src='/Samsung.svg' alt='A'/>
-                </div>
-                <div className='logoContainer'>
-                    <img src='/HP.svg' alt='A'/>
-                </div>
-                <div className='logoContainer'>
-                    <img src='/Continental.svg' alt='A'/>
-                </div>
-                <div className='logoContainer'>
-                    <img src='/Toyota.svg' alt='A'/>
-                </div>
-                <div className='logoContainer'>
-                    <img src='/SAP.png' alt='A'/>
-                </div>
-            </div>
-        </div>
-     </section>
-
-     <section className='sectionThree' style={{padding:'2rem 4rem'}}>
-            <div className='' style={{background:'linear-gradient(124.48deg, #E2E6E2 0%, #F1F2F1 71.42%)',padding:'4rem 3rem'}}>
-                <div className='secThreeContentWrap' style={{display:'flex'}}>
-                    <div className='secThreeContentA' style={{width:'50%'}}>
-                                {
-                                    accordionContent.map((accord,i) => {
-                                        return(
-                                            <>
-                                            <div key={i} className='accordionContainer' style={{border:'1px #9999 solid',borderRadius:'.3rem',padding:'1rem 1.5rem',background:'#FFFF',width:'80%',margin:'0 0 1rem 0'}}>
-                                                <div className='accordion-content' style={{}}>  
-                                                    <div onClick={() => setAccordion(i,console.log(i))} style={{display:'flex',alignItems:'center', justifyContent:'space-between',cursor:'pointer'}}>
-                                                        <div className='text-body-l' style={{fontWeight:'600',fontSize:'1.1rem',padding:'.4rem 0'}}>
-                                                            <p>{accord.question}</p>
-                                                        </div>
-                                                        <div className={ accordion == i ? 'activeArrow' : 'inactiveArrow'}>
-                                                            <img src='/accordionArrow.svg' alt='arrow' />
-                                                        </div>
-                                                    </div>
-                                                    <div className={ accordion == i ? `${activeClass}` : 'inactive'} style={{width:'31rem',overflow:'hidden'}}>
-                                                        <div className='text-body-l' style={{fontSize:'1.1rem',fontWeight:'400',color:'rgba(60, 60, 67, 0.85)',padding:'1rem 0'}}>
-                                                            <p>{accord.description}</p>
-                                                        </div>
-                                                        <div style={{display:'block'}}>
-                                                            <button className='text-body-l' style={{display:'block',width:'100%',height:'3.4rem',background:'#031D1E',border:'1px #5555 solid',borderRadius:'.3rem',color:'#60D185'}}>{accord.CTA}</button>
-                                                        </div>
-                                                        <div style={{display:'flex',alignItems:'center',justifyContent:'center',padding:'.8rem 0'}}>
-                                                        <div style={{marginRight:'.2rem'}}><img src='/accordionTick.svg' alt='TICK' /></div>
-                                                        <div className='text-body-l'><p style={{fontSize:'.9rem',fontWeight:'400'}}>{accord.smalldescription}</p></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            </>
-                                        )
-                                    })
-                                }
-                    </div>
-                    <div className='secThreeContentB' style={{width:'50%'}}>
-                        <div className='secThreeImgContainer' style={{width:'39rem',height:'35rem'}}>
-                            <img src='/sectionThreeImage.png' alt='image' style={{height:'100%',width:'100%'}} />
-                        </div>
-                    </div>
-                </div>
-            </div>
-     </section>
-
-     <section className='sliderSection' style={{padding:'10rem 4rem',overflowY:'hidden'}}>
-        <div className='sliderWrap' style={{display:'flex'}}>
-            <div className='sliderContentA' style={{width:'50%',position:'relative',display:'flex',alignItems:'center',padding:'0 2rem'}}>
-                <div style={{fontFamily:'var(--Archivo-font)',fontSize:'4rem',fontWeight:'400',lineHeight:'100%'}}>
-                    <p>True Partners<br/> in growth and<br/> support</p>
-                </div>
-                <div style={{position:'absolute',bottom:'0%'}}><img src='/leftArrow.svg'/></div>
-                <div style={{position:'absolute',bottom:'-.2%',left:'14%'}}><img src='/rightArrow.svg'/></div>
-            </div>
-            <div className='sliderContentB' style={{position:'relative',width:'50%'}}>
-                    <div style={{background:'#0F738F',borderRadius:'.6rem',padding:'3rem',color:'#FFF',width:'43rem',height:'28rem'}}>
-                        <div style={{height:'100%',display:'flex',flexDirection:'column'}}>
-                            <div>
-                                <div style={{fontFamily:'var(--Archivo-font)',fontSize:'1.7rem'}}><p>Abhilash Shibu</p></div>
-                                <div style={{fontFamily:'var(--Archivo-font)',fontSize:'1.1rem',fontWeight:'100',padding:'1rem 0'}}><p>CTO, Acme Corporation</p></div>
-                            </div>
-                            <div style={{fontFamily:'var(--Inter-font)',fontSize:'1.4rem',padding:'2rem 0',fontWeight:'100',lineHeight:'134%'}}>
-                                <p>“We will focus on adding value to our users by focussing on maximising lifestyle experiences and offering customer-focussed services both that connect our customers to the virtual and real world”</p>
-                            </div>
-                            <div style={{display:'flex',alignItems:'center'}}>
-                                <div style={{height:'5.3rem',width:'5.3rem',marginRight:'1rem'}}><img style={{height:'100%', width:'100%'}} src='/sliderPercentage.svg' alt='62%' /></div>
-                                <div style={{fontFamily:'var(--Inter-font)'}}><p>INCREASE IN INTERVIEW <br/> TO SELECTION RATIO</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div style={{background:'#FFFF',borderRadius:'.6rem',padding:'3rem',color:'#000',width:'38rem',height:'24rem',position:'absolute',top:'38%',left:'5%',zIndex:'-10'}}>
-                        <div style={{height:'100%',display:'flex',flexDirection:'column'}}>
-                            <div>
-                                <div style={{fontFamily:'var(--Archivo-font)',fontSize:'1.7rem'}}><p>Abhilash Shibu</p></div>
-                                <div style={{fontFamily:'var(--Archivo-font)',fontSize:'1.1rem',fontWeight:'100',padding:'1rem 0'}}><p>CTO, Acme Corporation</p></div>
-                            </div>
-                            <div style={{fontFamily:'var(--Inter-font)',fontSize:'1.4rem',padding:'0rem 0',fontWeight:'100',lineHeight:'134%'}}>
-                                <p>“We will focus on adding value to our users by focussing on maximising lifestyle experiences and offering customer-focussed services both that connect our customers to the virtual and real world”</p>
-                            </div>
-                            <div style={{display:'flex',alignItems:'center'}}>
-                                <div style={{height:'4rem',width:'4rem',marginRight:'1rem'}}><img style={{height:'100%', width:'100%'}} src='/sliderPercentage2.svg' alt='62%' /></div>
-                                <div style={{fontFamily:'var(--Inter-font)'}}><p>INCREASE IN INTERVIEW <br/> TO SELECTION RATIO</p></div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-     </section>
+     
 
      <section className='formSection' style={{padding:'2rem 4rem'}}>
         <div style={{padding:'0 4rem'}}>
