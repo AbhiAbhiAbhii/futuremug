@@ -47,7 +47,7 @@ export default function Form({mobileCheck}) {
                             <div style={{width:'50%'}}>
                                 <label style={{padding:'.5em 0'}}>Last Name *</label>
                                 <input ref={lNameRef} pattern='^[A-za-z]+$' required onBlur={lastNameFocus} focused={lastName.toString()} name="lastName" style={{width:'100%',height:'3em',padding:'0 .6em',background:'#FBFBFB',fontSize:'1.1em',fontFamily:'var(--Inter-font)',color:'#BFBFBF',borderRadius:'.4em',outline:'none'}} type='text' placeholder='Musk' />
-                                <div className="error"><p>Enter a valid LastName</p></div>
+                                <div className="error"><p>Enter a valid Last Name</p></div>
                             </div>
                         </div>
                         <div style={{padding:'.5em 0'}}>
