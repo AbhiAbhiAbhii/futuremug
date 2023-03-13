@@ -48,12 +48,12 @@ export default function Form({mobileCheck}) {
                             <div style={{marginRight:'1em'}}>
                                 <label style={{padding:'.5em 0'}}>First Name *</label>
                                 <input className="errorBorder" ref={fNameRef} pattern='^[A-za-z]+$' required onBlur={firstNameFocus} focused={firstName.toString()} name="firstName" style={{width:'100%',height:'3em',padding:'0 .6em',background:'#FBFBFB',fontSize:'1.1em',fontFamily:'var(--Inter-font)',color:'#BFBFBF',borderRadius:'.4em',outline:'none'}} type='text' placeholder='Elon' />
-                                <div className="error"><p>This field is required!</p></div>
+                                <div className="error"><p>Enter a valid First Name</p></div>
                             </div>
                             <div>
                                 <label style={{padding:'.5em 0'}}>Last Name *</label>
                                 <input ref={lNameRef} pattern='^[A-za-z]+$' required onBlur={lastNameFocus} focused={lastName.toString()} name="lastName" style={{width:'100%',height:'3em',padding:'0 .6em',background:'#FBFBFB',fontSize:'1.1em',fontFamily:'var(--Inter-font)',color:'#BFBFBF',borderRadius:'.4em',outline:'none'}} type='text' placeholder='Musk' />
-                                <div className="error"><p>This field is required!</p></div>
+                                <div className="error"><p>Enter a valid LastName</p></div>
                             </div>
                         </div>
                         <div style={{padding:'.5em 0'}}>
@@ -64,7 +64,7 @@ export default function Form({mobileCheck}) {
                         <div style={{padding:'.5em 0'}}>
                             <label style={{padding:'.6em 0'}}>Work Email *</label>
                             <input ref={eMailRef}  required onBlur={emailFocus} focused={email.toString()} name="eMail" style={{width:'100%',height:'2.8em',padding:'0 .6em',background:'#FBFBFB',fontSize:'1.1em',fontFamily:'var(--Inter-font)',color:'#BFBFBF',borderRadius:'.4em',outline:'none'}} type='email' placeholder='elon@tesla.com' />
-                            <div className="error"><p>Enter your Email</p></div>
+                            <div className="error"><p>Enter a valid Email</p></div>
                         </div>
                         <div style={{position:'relative',padding:'.5em 0'}}>
                             <label style={{padding:'.6em 0'}}>Mobile Number</label>
