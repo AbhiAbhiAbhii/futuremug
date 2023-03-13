@@ -112,7 +112,7 @@ input {
   border: 1px #dadada solid;
 }
 input:focus {
-  border: 1px green solid;
+  border: 1px rgb(44, 160, 210) solid;
 }
 input:invalid[focused='true'] {
   border:1px red solid;

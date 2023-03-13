@@ -26,12 +26,6 @@ export default function Form({mobileCheck}) {
         setEmail(true);
     }
 
-    //  const handleSubmit = (e) => {
-    //      e.preventDefault();
-    //      const data = new FormData(e.target);
-    //      console.log(Object.fromEntries(data.entries()));
-    //  }   
-
     const handleSubmit = (e) => {
         e.preventDefault(); 
         const data = new FormData(e.target);
@@ -45,12 +39,12 @@ export default function Form({mobileCheck}) {
                 <div className='formwrap' style={{fontFamily:'var(--Inter-font)',fontSize:'.9em',fontWeight:'400',color:'#112126'}}>
                     <form onSubmit={handleSubmit} className='form'>
                         <div style={{display:'flex',flexDirection:'row',justifyContent:'space-between',fontFamily:'var(--Inter-font)',fontSize:'.9em',fontWeight:'400',width:'100%'}}>
-                            <div style={{marginRight:'1em'}}>
+                            <div style={{width:'50%'}}>
                                 <label style={{padding:'.5em 0'}}>First Name *</label>
-                                <input className="errorBorder" ref={fNameRef} pattern='^[A-za-z]+$' required onBlur={firstNameFocus} focused={firstName.toString()} name="firstName" style={{width:'100%',height:'3em',padding:'0 .6em',background:'#FBFBFB',fontSize:'1.1em',fontFamily:'var(--Inter-font)',color:'#BFBFBF',borderRadius:'.4em',outline:'none'}} type='text' placeholder='Elon' />
+                                <input className="errorBorder" ref={fNameRef} pattern='^[A-za-z]+$' required onBlur={firstNameFocus} focused={firstName.toString()} name="firstName" style={{width:'90%',height:'3em',padding:'0 .6em',background:'#FBFBFB',fontSize:'1.1em',fontFamily:'var(--Inter-font)',color:'#BFBFBF',borderRadius:'.4em',outline:'none'}} type='text' placeholder='Elon' />
                                 <div className="error"><p>Enter a valid First Name</p></div>
                             </div>
-                            <div>
+                            <div style={{width:'50%'}}>
                                 <label style={{padding:'.5em 0'}}>Last Name *</label>
                                 <input ref={lNameRef} pattern='^[A-za-z]+$' required onBlur={lastNameFocus} focused={lastName.toString()} name="lastName" style={{width:'100%',height:'3em',padding:'0 .6em',background:'#FBFBFB',fontSize:'1.1em',fontFamily:'var(--Inter-font)',color:'#BFBFBF',borderRadius:'.4em',outline:'none'}} type='text' placeholder='Musk' />
                                 <div className="error"><p>Enter a valid LastName</p></div>
