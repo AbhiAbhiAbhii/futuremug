@@ -103,6 +103,24 @@ a {
 .form label {
   display: block;
 }
+.error {
+  padding: .8rem .2rem 0 .2rem;
+  color: #f00000;
+  display: none;
+}
+input {
+  border: 1px #dadada solid;
+}
+input:focus {
+  border: 1px green solid;
+}
+input:invalid[focused='true'] {
+  border:1px red solid;
+}
+input:invalid[focused='true'] ~ .error {
+  display: block;
+}
+
 
 
 
